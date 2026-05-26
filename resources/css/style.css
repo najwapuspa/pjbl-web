@@ -1,0 +1,92 @@
+/* Hero Banner Styling */
+.hero-banner {
+    background-color: #4DBFFF; /* Warna biru sesuai image_f0a099.jpg */
+    overflow: hidden;
+}
+
+.hero-text-container {
+    padding: 60px;
+}
+
+.hero-image {
+    height: 500px;
+    object-fit: cover;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); /* Efek miring di gambar */
+}
+
+/* Top Brands Section */
+.top-brands-section {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.brand-header-box {
+    background-color: #FFEAE3; /* Warna krem kemerahan sesuai screenshot */
+    max-width: 90%;
+    padding: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+.brand-header-box h2 {
+    font-family: 'Playfair Display', serif; /* Font elegan untuk judul */
+    font-weight: 700;
+    color: #003030;
+}
+
+/* Horizontal Scroll Logic */
+.brand-scroll-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+}
+
+.brand-scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.brand-item {
+    flex: 0 0 auto;
+    width: 32%; /* Menampilkan sekitar 3 item di layar lebar */
+    min-width: 280px;
+}
+
+.brand-card {
+    position: relative;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.brand-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-white {
+    width: 120px;
+    filter: brightness(0) invert(1);
+}
+
+.text-logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
